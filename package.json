@@ -1,0 +1,24 @@
+{
+  "name": "nucli",
+  "version": "1.0.0",
+  "description": "Configuration based node cli",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tswayne/nucli.git"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "command line"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Swayne",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "16.0.0-rc2",
+    "commander": "^2.20.0"
+  }
+}
