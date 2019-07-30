@@ -6,6 +6,7 @@ class ParamParser {
   }
 
   fromArgv(rawArgs) {
+    if (!this.config.fields) { return {} }
     const args = this._parse(rawArgs)
     return this._hydrate(args)
   }
