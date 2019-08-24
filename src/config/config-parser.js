@@ -9,7 +9,7 @@ class ConfigParser {
 
   constructor(definition={}) {
     this.definition = definition
-    this.schema = new JoiSchema(definition.fields)
+    this.schema = new JoiSchema(definition.fields, definition.strictMode)
   }
 
   extract() {
