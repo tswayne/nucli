@@ -1,6 +1,6 @@
 {
   "name": "nucli",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Configuration based node cli",
   "main": "index.js",
   "repository": {
@@ -18,7 +18,7 @@
   "author": "Tyler Swayne",
   "license": "ISC",
   "dependencies": {
-    "@hapi/joi": "16.0.0-rc2",
+    "@hapi/joi": "16.0.1",
     "commander": "^2.20.0"
   }
 }
