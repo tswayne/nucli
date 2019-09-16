@@ -14,7 +14,7 @@ class JoiSchema {
   }
 
   validate(config) {
-    const { value, error } = Joi.validate(config, this.schema, { abortEarly: false, allowUnknown: !this.strictMode })
+    const { value, error } = Joi.object(this.schema).validate(config, { abortEarly: false, allowUnknown: !this.strictMode })
     if (error) { throw new ConfigValidationError(error)}
     return value
   }
