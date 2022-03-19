@@ -1,4 +1,3 @@
-const Joi = require('@hapi/joi')
 const ConfigValidationError = require('./config-validation-error')
 
 class JoiSchema {
@@ -14,7 +13,7 @@ class JoiSchema {
   }
 
   validate(config) {
-    const { value, error } = Joi.object(this.schema).validate(config, { abortEarly: false, allowUnknown: !this.strictMode })
+    const { value, error } = this.schema.validate(config, { abortEarly: false, allowUnknown: !this.strictMode })
     if (error) { throw new ConfigValidationError(error)}
     return value
   }
