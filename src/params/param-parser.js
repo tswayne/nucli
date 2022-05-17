@@ -31,7 +31,7 @@ class ParamParser {
       commander.option(flags, paramConfig.description, paramConfig.type)
     })
 
-    return commander.parse(rawArgs)
+    return commander.parse(rawArgs).opts()
   }
 }
 
